@@ -17,7 +17,7 @@
   </maintainers>
   
   <release>
-    <version>1.0</version>
+    <version>1.0.0</version>
     <date>2005-05-07</date>
     <notes>
      Stable release based on 0.1.0
@@ -43,10 +43,10 @@
   
   <changelog>
     <release>
-      <version>1.0</version>
+      <version>1.0.0</version>
       <date>2005-05-07</date>
       <notes>
-        No bugs for months; so here is the stable 1.0
+        No bugs for months; so here is the stable 1.0.0
       </notes>
       <state>stable</state>
     </release>
