@@ -17,12 +17,12 @@
   </maintainers>
   
   <release>
-    <version>0.1.0</version>
-    <date>2004-11-02</date>
+    <version>1.0</version>
+    <date>2005-05-07</date>
     <notes>
-     Initial release
+     Stable release based on 0.1.0
     </notes>
-    <state>beta</state>
+    <state>stable</state>
     <filelist>
       <dir name="/" baseinstalldir="Gtk" role="php">
         <file md5sum="e7b05a69e3b8e0112105c7694f778244">FileDrop.php</file>
@@ -42,6 +42,14 @@
   </release>
   
   <changelog>
+    <release>
+      <version>1.0</version>
+      <date>2005-05-07</date>
+      <notes>
+        No bugs for months; so here is the stable 1.0
+      </notes>
+      <state>stable</state>
+    </release>
     <release>
       <version>0.1.0</version>
       <date>2004-11-02</date>
