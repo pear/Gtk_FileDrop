@@ -17,7 +17,7 @@
   </maintainers>
   
   <release>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <date>2005-05-07</date>
     <notes>
      Stable release based on 0.1.0
@@ -25,7 +25,7 @@
     <state>stable</state>
     <filelist>
       <dir name="/" baseinstalldir="Gtk" role="php">
-        <file md5sum="e7b05a69e3b8e0112105c7694f778244">FileDrop.php</file>
+        <file md5sum="018ecd88220b3c836ca939e7c5d7c78e">FileDrop.php</file>
         <dir name="examples" role="doc">
           <file md5sum="777ad321dea52bcf7f216bae730b2c21">example.php</file>
           <file md5sum="6a75c9cfbf2f7e467a5fa3ec68fe16b1">big_example.php</file>
@@ -42,6 +42,14 @@
   </release>
   
   <changelog>
+    <release>
+      <version>1.0.1</version>
+      <date>2005-05-07</date>
+      <notes>
+        Bad md5sum in package.xml... why did the verifier didn't tell me this?
+      </notes>
+      <state>stable</state>
+    </release>
     <release>
       <version>1.0.0</version>
       <date>2005-05-07</date>
