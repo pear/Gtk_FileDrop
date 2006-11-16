@@ -1,71 +1,127 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
-<!DOCTYPE package SYSTEM "http://pear.php.net/dtd/package-1.0">
-<package version="1.0">
-  <name>Gtk_FileDrop</name>
-  <summary>Make Gtk widgets accept file drops</summary>
-  <description>A class which makes it easy to make a GtkWidget accept 
-  the dropping of files or folders</description>
-  <license>PHP License</license>
-  
-  <maintainers>
-    <maintainer>
-      <user>cweiske</user>
-      <role>lead</role>
-      <name>Christian Weiske</name>
-      <email>cweiske@cweiske.de</email>
-    </maintainer>
-  </maintainers>
-  
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.4.11" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+http://pear.php.net/dtd/tasks-1.0.xsd
+http://pear.php.net/dtd/package-2.0
+http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Gtk_FileDrop</name>
+ <channel>pear.php.net</channel>
+ <summary>Make Gtk widgets accept file drops</summary>
+ <description>
+  A class which makes it easy to make a GtkWidget accept
+  the dropping of files or folders
+ </description>
+ <lead>
+  <name>Christian Weiske</name>
+  <user>cweiske</user>
+  <email>cweiske@cweiske.de</email>
+  <active>yes</active>
+ </lead>
+ <date>2006-11-16</date>
+ <time>15:10:17</time>
+ <version>
+  <release>1.0.2</release>
+  <api>1.0.1</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license">PHP License</license>
+ <notes>
+  Switch to package.xml v2
+ </notes>
+
+ <contents>
+  <dir name="/">
+   <file baseinstalldir="Gtk" name="FileDrop.php" role="php" />
+   <dir name="examples">
+    <file baseinstalldir="Gtk" name="big_example.php" role="doc" />
+    <file baseinstalldir="Gtk" name="example.php" role="doc" />
+   </dir>
+   <dir name="tests">
+    <file baseinstalldir="Gtk" name="FileDrop_testcase.php" role="test" />
+    <file baseinstalldir="Gtk" name="runtest.php" role="test" />
+   </dir>
+  </dir>
+ </contents>
+
+ <dependencies>
+  <required>
+   <php>
+    <min>4.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0b1</min>
+   </pearinstaller>
+   <package>
+    <name>MIME_Type</name>
+    <channel>pear.php.net</channel>
+    <min>1.0.0beta3</min>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+
+ <changelog>
   <release>
-    <version>1.0.1</version>
-    <date>2005-05-07</date>
-    <notes>
-     Stable release based on 0.1.0
-    </notes>
-    <state>stable</state>
-    <filelist>
-      <dir name="/" baseinstalldir="Gtk" role="php">
-        <file md5sum="018ecd88220b3c836ca939e7c5d7c78e">FileDrop.php</file>
-        <dir name="examples" role="doc">
-          <file md5sum="777ad321dea52bcf7f216bae730b2c21">example.php</file>
-          <file md5sum="6a75c9cfbf2f7e467a5fa3ec68fe16b1">big_example.php</file>
-        </dir>
-        <dir name="tests" role="test">
-          <file md5sum="6d6096c2b33ffee03ea8c363e9625177">FileDrop_testcase.php</file>
-          <file md5sum="c427d532eb0834f650993c89805f8ab4">runtest.php</file>
-        </dir>
-      </dir>    
-    </filelist>
-    <deps>
-      <dep type="pkg" rel="ge" version="1.0.0beta3">MIME_Type</dep>
-    </deps>
+   <version>
+    <release>1.0.2</release>
+    <api>1.0.1</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2006-11-16</date>
+   <license uri="http://www.php.net/license">PHP License</license>
+   <notes>
+    Switch to package.xml v2
+   </notes>
   </release>
-  
-  <changelog>
-    <release>
-      <version>1.0.1</version>
-      <date>2005-05-07</date>
-      <notes>
-        Bad md5sum in package.xml... why did the verifier didn't tell me this?
-      </notes>
-      <state>stable</state>
-    </release>
-    <release>
-      <version>1.0.0</version>
-      <date>2005-05-07</date>
-      <notes>
-        No bugs for months; so here is the stable 1.0.0
-      </notes>
-      <state>stable</state>
-    </release>
-    <release>
-      <version>0.1.0</version>
-      <date>2004-11-02</date>
-      <notes>
-        Initial release
-      </notes>
-      <state>beta</state>
-    </release>
-  </changelog>
-  
+
+  <release>
+   <version>
+    <release>1.0.1</release>
+    <api>1.0.1</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2005-05-07</date>
+   <license uri="http://www.php.net/license">PHP License</license>
+   <notes>Bad md5sum in package.xml... why did the verifier didn&apos;t tell me this?
+   </notes>
+  </release>
+
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2005-05-07</date>
+   <license uri="http://www.php.net/license">PHP License</license>
+   <notes>No bugs for months; so here is the stable 1.0.0
+   </notes>
+  </release>
+
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2004-11-02</date>
+   <license uri="http://www.php.net/license">PHP License</license>
+   <notes>Initial release
+   </notes>
+  </release>
+ </changelog>
 </package>
