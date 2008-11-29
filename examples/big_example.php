@@ -17,7 +17,7 @@ class Test
     function Test() {
         $this->te = time();
     }
-    function try($widget, $arFiles)
+    function tryout($widget, $arFiles)
     {
         echo $this->te . ' test';
         var_dump(get_class($widget), $arFiles);
@@ -64,7 +64,7 @@ $fs->show();
 $cmb =& new GtkCombo();
 $table->attach($cmb, 0, 3, $nCount, $nCount + 1, GTK_FILL, GTK_FILL);
 $test = new Test();
-Gtk_FileDrop::attach($cmb, array( 'text/plain'), array( &$test, 'try'), false);
+Gtk_FileDrop::attach($cmb, array( 'text/plain'), array( &$test, 'tryout'), false);
 
 $test->te = 'asd';
 $window->show_all();
