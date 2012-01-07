@@ -6,28 +6,10 @@
 */
 
 require_once 'Gtk/FileDrop.php';
-require_once 'PHPUnit.php';
+require_once 'PHPUnit/Framework/TestCase.php';
 
-class Gtk_FileDrop_Test extends PHPUnit_TestCase
+class Gtk_FileDrop_Test extends PHPUnit_Framework_TestCase
 {
-    // constructor of the test suite
-    function Gtk_FileDrop_Test($name) {
-       $this->PHPUnit_TestCase($name);
-    }
-
-    // called before the test functions will be executed
-    // this function is defined in PHPUnit_TestCase and overwritten
-    // here
-    function setUp() {
-    }
-
-    // called after the test functions are executed
-    // this function is defined in PHPUnit_TestCase and overwritten
-    // here
-    function tearDown() {
-    }
-
-    
     function testUriList() {
         $arTests = array(
             'file://localhost/path/to/file' => '/path/to/file',
@@ -61,4 +43,3 @@ class Gtk_FileDrop_Test extends PHPUnit_TestCase
         
     }
 }
-?>
