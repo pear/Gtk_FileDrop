@@ -1,0 +1,32 @@
+{
+    "authors": [
+        {
+            "email": "cweiske@cweiske.de",
+            "name": "Christian Weiske",
+            "role": "Lead"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Gtk": "./"
+        }
+    },
+    "description": "More info available on: http://pear.php.net/package/Gtk_FileDrop",
+    "include-path": [
+        "./"
+    ],
+    "license": "PHP License",
+    "name": "pear/gtk_filedrop",
+    "support": {
+        "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Gtk_FileDrop",
+        "source": "https://github.com/pear/Gtk_FileDrop"
+    },
+    "type": "library",
+    "require": {
+        "pear/pear_exception": "*",
+        "pear/mime_type": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
+}
